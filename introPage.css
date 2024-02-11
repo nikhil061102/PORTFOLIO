@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+#mainContainer {
+  display: flex;
+  background-image: url("frontpic.png");
+  background-repeat: no-repeat;
+  height: 90%;
+  background-attachment: fixed;
+  background-position: 95% bottom;
+  margin: auto 5%;
+  justify-content: center;
+  flex-direction: column;
+}
+#mainContainer #textInfo {
+  font-size: 200%;
+  font-weight: 600;
+}
+
+#introPage .wrapper {
+  background-color: rgba(255, 255, 255, 0);
+  height: 35px;
+  display: flex;
+}
+
+#desc {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: rgb(0, 0, 0);
+  width: 99%;
+}
+
+.words {
+  overflow: hidden;
+}
+
+.wrapper span {
+  display: block;
+  height: 400%;
+  padding-left: 10px;
+  color: black;
+  animation: spin_words 6s infinite;
+}
+.personalinfo {
+  margin-top: 25px;
+  width: 90%;
+}
+.personalinfo .btn {
+  border-radius: 10px;
+  height: 40px;
+  padding: 0px 20px;
+  margin-right: 2%;
+  box-shadow: 2px 2px #888888;
+  cursor: pointer;
+  color: black;
+}
+.personalinfo .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(-110%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
