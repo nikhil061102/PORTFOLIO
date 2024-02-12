@@ -19,31 +19,55 @@ html {
   display: flex;
   justify-content: space-between;
   transition: 0.6s;
-  padding: 1% 1%; 
-  z-index: 20;
+  padding: 0.75% 0.5%; 
+  z-index: 4;
 }
 .StickyNavBar ul {
-  position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  top: 1px;
-  left: 0;
 }
 .StickyNavBar ul li {
-  position: relative;
   list-style: none;
 }
+@media only screen and (max-width: 930px) {
+  .StickyNavBar ul {
+    font-size: 5vw;
+  }
+  .dropbtn i {
+    font-size: 5.5vw;
+  }
+  .dropbtn {
+    font-size: 5vw;
+  }
+  .dropdown-content {
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (min-width: 931px) {
+.StickyNavBar ul {
+  font-size: 2vw;
+  }
+  .dropbtn i {
+    font-size: 2.5vw;
+  }
+  .dropdown-content {
+    font-size: 2vw;
+  }
+}
 .StickyNavBar ul li a {
-  position: relative;
   text-decoration: none;
-  margin: 0px 5px;
+  margin: 0px 1vw;
   color: white;
   transition: 0.6s;
+  background-color: black;
+  border-radius: 3px;
 }
-
+.StickyNavBar ul li:hover a {
+  background-color: white;
+  color: black;
+}
 .sections {
-  margin: 5% auto;
+  margin: 13vh auto;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -51,11 +75,67 @@ html {
   align-items: center;
 }
 
-.socials {
-  display: inline-block;
+.dropdown {
+  margin-right: 3vw;
   position: relative;
+  display: inline-block;
 }
 
-.socials i{
-  color: white
+.dropbtn {
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  background-color: black;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 0px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(87, 87, 87);
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.theme-toggle {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  z-index: 4;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+}
+
+#moon-icon {
+  display: none;
 }

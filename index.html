@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="introPage.css">
     <link rel="stylesheet" href="contactform.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primeicons/4.1.0/primeicons.min.css">
     <script src="projectscript.js" defer></script>
     <script
       src="https://kit.fontawesome.com/32fbbecd3c.js"
@@ -33,15 +34,20 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
-      <div class="socials">
-        <a href="https://www.facebook.com/profile.php?id=100073587107930" target="_blank"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/nikhil-rastogi-851359227/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-        <a href="https://www.instagram.com/nikhil_061102?igsh=OGY3MTU3OGY1Mw==" target="_blank"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
-        <a href="https://github.com/nikhil061102" target="_blank"><i class="fa-brands fa-square-github fa-2x"></i></a>
+      
+      
+      <div class="dropdown">
+        <button title="menu" class="dropbtn">
+          <i class="fas fa-globe dropbtn"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://www.facebook.com/profile.php?id=100073587107930" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/nikhil-rastogi-851359227/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://www.instagram.com/nikhil_061102?igsh=OGY3MTU3OGY1Mw==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square fa-2x"></i></a>
+          <a href="https://github.com/nikhil061102" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square fa-2x"></i></a>
+        </div>
       </div>
     </nav>
-    
     <div>
       <section id="introPage" class="sections">
         <div id="mainContainer">
@@ -49,7 +55,7 @@
             <div id="textInfo">
                 <div>Hi there,👋🏻</div>
                 <div>I'm Nikhil Rastogi 👨🏻‍💻</div>
-                <div>from Gurugram, Haryana, India 🗺📍</div>
+                <div>from Gurugram, Haryana, India 🗺️📍</div>
                 <div class="wrapper">
                 <p>I'm</p>
                 <div class="words">
@@ -488,5 +494,9 @@
     </section>
       </section>
     </div>
+    <div class="theme-toggle" id="theme-toggle">
+        <i class="pi pi-sun icon" id="sun-icon"></i>
+        <i class="pi pi-moon icon" id="moon-icon"></i>
+      </div>
   </body>
 </html>

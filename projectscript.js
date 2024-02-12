@@ -82,3 +82,25 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+const themeToggle = document.getElementById('theme-toggle');
+const sunIcon = document.getElementById('sun-icon');
+const moonIcon = document.getElementById('moon-icon');
+let isDarkMode = false;
+
+themeToggle.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+    if (isDarkMode) {
+        document.body.style.backgroundColor = '#000000';
+        moonIcon.style.display = 'inline-block';
+        moonIcon.style.color = '#000000';
+        sunIcon.style.display = 'none';
+        themeToggle.style.backgroundColor = '#ffffff';
+      } else {
+        document.body.style.backgroundColor = '#ffffff';
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'inline-block';
+        themeToggle.style.backgroundColor = '#000000';
+        themeToggle.style.color = '#000000';
+      }
+});

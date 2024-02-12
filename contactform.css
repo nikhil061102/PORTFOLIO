@@ -153,16 +153,3 @@
 #contact .wrapper .form .inputfield:last-child{
   margin-bottom: 0;
 }
-
-@media (max-width:420px) {
-  #contact .wrapper .form .inputfield{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #contact .wrapper .form .inputfield label{
-    margin-bottom: 5px;
-  }
-  #contact .wrapper .form .inputfield.terms{
-    flex-direction: row;
-  }
-}
