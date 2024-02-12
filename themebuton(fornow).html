@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Toggle Button</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primeicons/4.1.0/primeicons.min.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0; /* default light theme background color */
+    }
+
+    .theme-toggle {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #333;
+      cursor: pointer;
+    }
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: white;
+    }
+
+    /* Hide moon icon initially */
+    #moon-icon {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="theme-toggle" id="theme-toggle">
+    <i class="pi pi-sun icon" id="sun-icon"></i>
+    <i class="pi pi-moon icon" id="moon-icon"></i>
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+    let isDarkMode = false;
+
+    themeToggle.addEventListener('click', () => {
+      isDarkMode = !isDarkMode;
+      if (isDarkMode) {
+        document.body.style.backgroundColor = '#222'; // Dark mode background color
+        moonIcon.style.display = 'inline-block'; // Show moon icon
+        sunIcon.style.display = 'none'; // Hide sun icon
+      } else {
+        document.body.style.backgroundColor = '#f0f0f0'; // Light mode background color
+        moonIcon.style.display = 'none'; // Hide moon icon
+        sunIcon.style.display = 'inline-block'; // Show sun icon
+      }
+    });
+  </script>
+</body>
+</html>

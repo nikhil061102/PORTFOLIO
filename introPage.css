@@ -2,18 +2,11 @@
 
 #mainContainer {
   display: flex;
-  background-image: url("frontpic.png");
-  background-repeat: no-repeat;
   height: 90%;
-  background-attachment: fixed;
-  background-position: 95% bottom;
   margin: auto 5%;
   justify-content: center;
   flex-direction: column;
-}
-#mainContainer #textInfo {
-  font-size: 200%;
-  font-weight: 600;
+  align-items: center;
 }
 
 #introPage .wrapper {
@@ -23,10 +16,16 @@
 }
 
 #desc {
+  font-size: 80%;
+  text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
   color: rgb(0, 0, 0);
-  width: 99%;
+  width: 90%;
+}
+
+#mainContainer #textInfo { 
+  font-weight: 900;
 }
 
 .words {
@@ -40,10 +39,51 @@
   color: black;
   animation: spin_words 6s infinite;
 }
-.personalinfo {
-  margin-top: 25px;
+
+#picNheading{
   width: 90%;
 }
+
+/* img {
+  width: 25%; 
+  height: auto;
+} */
+
+@media screen and (min-width: 1000px) {
+  #picNheading{
+    display: flex;
+    justify-content: space-between;
+  }
+  #mainContainer #textInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #mainContainer #textInfo {
+    font-size: 200%;
+  }
+  img {
+    width: 25%; 
+    height: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #picNheading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    width: 75%; 
+    height: auto;
+  }
+}
+
+.personalinfo {
+  margin-top: 25px;
+  width: 80%;
+}
+
 .personalinfo .btn {
   border-radius: 10px;
   height: 40px;
