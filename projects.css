@@ -1,30 +1,34 @@
 @media only screen and (max-width: 1000px) {
   #projects .title{
+    color: var(--text-color);
+    background-color: var(--bg-color);
       font-size: 5vw;
   }
 }
 @media only screen and (min-width: 1001px) {
   #projects .title{
+    color: var(--text-color);
+    background-color: var(--bg-color);
       font-size: 3vw;
   }
 }
 
 #contact .wrapper .title{
+  color: var(--text-color);
+  background-color: var(--bg-color);
   font-size: 5vw;
 }
 
-@media only screen and (min-width: 1001px) {
-#contact .wrapper .title{
-  font-size: 3vw;
-}
-}
-
 .wrapper {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   max-width: 1100px;
   width: 100%;
   position: relative;
 }
 .wrapper i {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   top: 50%;
   height: 50px;
   width: 50px;
@@ -33,22 +37,30 @@
   position: absolute;
   text-align: center;
   line-height: 50px;
-  background: #fff;
+  background: var(--bg-color);
   border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px var(--text-color);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
 .wrapper i:active{
+  color: var(--text-color);
+  background-color: var(--bg-color);
   transform: translateY(-50%) scale(0.85);
 }
 .wrapper i:first-child{
+  color: var(--text-color);
+  background-color: var(--bg-color);
   left: -22px;
 }
 .wrapper i:last-child{
+  color: var(--text-color);
+  background-color: var(--bg-color);
   right: -22px;
 }
 .wrapper .carousel{
+  color: var(--text-color);
+  background-color: var(--bg-color);
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 12px);
@@ -60,60 +72,83 @@
   scrollbar-width: none;
 }
 .carousel::-webkit-scrollbar {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   display: none;
 }
 .carousel.no-transition {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   scroll-behavior: auto;
 }
 .carousel.dragging {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
 .carousel.dragging .card {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   cursor: grab;
   user-select: none;
   -webkit-user-select: none;
 }
 .carousel :where(.card, .img) {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .carousel .card {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   scroll-snap-align: start;
-  border: 2px solid black;
+  border: 2px solid var(--text-color);
   box-shadow: 10px 0px 10px rgb(127, 127, 127);
   list-style: none;
-  background: #fff;
   cursor: pointer;
   flex-direction: column;
   border-radius: 15px;
 }
 .carousel .card .img {
-  background: #8B53FF;
+  color: var(--text-color);
+  background: var(--bg-color);
+  background-color: var(--bg-color);
   height: 200px;
   width: 250px;
 }
 .card .img img {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   width: 250px;
   height: 200px;
   object-fit: cover;
   border: 4px solid #fff;
 }
 .carousel .card h2 {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   font-weight: 200;
   font-size: 1.56rem;
   margin: 10px 0 5px;
 }
 .carousel .card span {
+  color: var(--text-color);
+  background-color: var(--bg-color);
   color: #6A6D78;
   font-size: 1.31rem;
 }
 
 .wrapper ul li a{
+  color: var(--text-color);
+  background-color: var(--bg-color);
   text-decoration: none;
 }
 .wrapper ul li:hover a{
+  color: var(--text-color);
+  background-color: var(--bg-color);
   font-weight: bold;
 }
 @media screen and (max-width: 900px) {

@@ -1,10 +1,12 @@
 .container{
+    background-color: var(--bg-color);
     width: 100%;
     padding: 35px 10%;
 }
 
 .col header.title{
-    color: black;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     padding: 0px 0px 5px 0px;
     font-size: 3vw;
 }
@@ -12,7 +14,7 @@
 @media only screen and (max-width: 1000px) {
     .col .contents{
         padding: 0px 5px 0px 20px;
-        border-left: 2px solid #bababa;
+        border-left: 2px solid var(--bg-color);
     }
     .col header.title{
         font-size: 5vw;
@@ -30,21 +32,23 @@
 }
 
 .col .contents .box{
+    background-color: var(--bg-color);
     position: relative;
     padding: 20px;
     border: 1px solid #eaeaea;
-    background-color: white;
     cursor: pointer;
     transition: all 0.4s;
     margin-bottom: 5px;
 }
 
 .col .contents .box:hover{
+    background-color: var(--bg-color);
     box-shadow: 0px 3px 12px 0px #ccc;
     border: 1px solid transparent;
 }
 
 .col .contents .box::before{
+    background-color: var(--bg-color);
     content: "";
     position: absolute;
     width: 16px;
@@ -52,23 +56,25 @@
     border-radius: 50%;
     right: calc(100% + 12px);
     top: 0;
-    background-color: black;
-    border: 2px solid white;
+    background-color: var(--text-color);
+    border: 2px solid var(--bg-color);
 }
 
 .box h4{
+    background-color: var(--bg-color);
     position: relative;
-    color: black;
+    color: var(--text-color);
 }
 
 .box h3{
+    background-color: var(--bg-color);
     font-size: 15px;
     padding: 10px 0px 6px;
     color: #444;
 }
 
-
 .box p{
+    background-color: var(--bg-color);
     line-height: 1.2;
     color: #666;
     font-size: 18px;

@@ -6,34 +6,44 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color:  var(--bg-color);
+  color: var(--text-color);
 }
 
 #introPage .wrapper {
   height: 10vh;
   display: flex;
+  background-color:  var(--bg-color);
+  color: var(--text-color);
 }
 
 #desc {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
-  color: rgb(0, 0, 0);
+  color: var(--text-color);
+  background-color:  var(--bg-color);
   width: 90%;
 }
 
 #mainContainer #textInfo { 
   font-weight: 900;
+  background-color:  var(--bg-color);
+  color: var(--text-color);
 }
 
 .words {
   overflow: hidden;
+  background-color:  var(--bg-color);
+  color: var(--text-color);
 }
 
 .wrapper span {
   display: block;
   height: 400%;
   padding-left: 10px;
-  color: black;
+  background-color:  var(--bg-color);
+  color: var(--text-color);
   animation: spin_words 6s infinite;
 }
 
@@ -48,12 +58,16 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
+    background-color:  var(--bg-color);
+    color: var(--text-color);
   }
   #mainContainer #textInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 2.5vw;
+    background-color:  var(--bg-color);
+    color: var(--text-color);
   }
   img {
     width: 25%; 
@@ -62,6 +76,8 @@
 }
 @media screen and (max-width: 1000px) {
   #picNheading{
+    background-color:  var(--bg-color);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,12 +91,16 @@
   }
   #mainContainer #textInfo {
     font-size: 6vw;
+    background-color:  var(--bg-color);
+    color: var(--text-color);
   }
 }
 
 .personalinfo {
   margin-top: 25px;
   width: 80%;
+  background-color:  var(--bg-color);
+  color: var(--text-color);
 }
 
 .personalinfo .btn {
@@ -88,13 +108,14 @@
   height: 40px;
   padding: 0px 20px;
   margin-right: 2%;
-  box-shadow: 2px 2px #888888;
+  box-shadow: 2px 2px #555555;
+  background-color:  var(--bg-color);
   cursor: pointer;
-  color: black;
+  color: var(--text-color);
 }
 .personalinfo .btn:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 @keyframes spin_words {

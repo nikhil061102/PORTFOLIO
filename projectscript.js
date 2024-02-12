@@ -91,16 +91,18 @@ let isDarkMode = false;
 themeToggle.addEventListener('click', () => {
     isDarkMode = !isDarkMode;
     if (isDarkMode) {
-        document.body.style.backgroundColor = '#000000';
+        document.documentElement.style.setProperty('--text-color', 'white');
+        document.documentElement.style.setProperty('--bg-color', 'black');
         moonIcon.style.display = 'inline-block';
-        moonIcon.style.color = '#000000';
+        moonIcon.style.color = 'black';
         sunIcon.style.display = 'none';
-        themeToggle.style.backgroundColor = '#ffffff';
+        themeToggle.style.backgroundColor = 'white';
       } else {
-        document.body.style.backgroundColor = '#ffffff';
+        document.documentElement.style.setProperty('--text-color', 'black');
+        document.documentElement.style.setProperty('--bg-color', 'white');
         moonIcon.style.display = 'none';
         sunIcon.style.display = 'inline-block';
-        themeToggle.style.backgroundColor = '#000000';
-        themeToggle.style.color = '#000000';
+        themeToggle.style.backgroundColor = 'black';
+        themeToggle.style.color = 'black';
       }
 });
