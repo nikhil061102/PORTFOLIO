@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 #contact .wrapper{
-  max-width: 500px;
-  width: 100%;
-  background: #fff;
   margin: 50px auto;
   padding: 30px;
 }
@@ -42,9 +39,18 @@
   resize: none;
 }
 
+@media only screen and (max-width: 1000px) {
+  #contact .wrapper .title{
+    font-size: 5vw;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  #contact .wrapper .title{
+    font-size: 3vw;
+  }
+}
+
 #contact .wrapper .title{
-  font-size: 24px;
-  font-weight: 700;
   margin-bottom: 25px;
   color: #000000;
   text-align: center;

@@ -6,6 +6,7 @@
 .col header.title{
     color: black;
     padding: 0px 0px 5px 0px;
+    font-size: 3vw;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -13,12 +14,18 @@
         padding: 0px 5px 0px 20px;
         border-left: 2px solid #bababa;
     }
+    .col header.title{
+        font-size: 5vw;
+    }
 }
   
 @media only screen and (min-width: 1001px) {
     .col .contents{
         padding: 0px 20px 0px 20px;
         border-left: 2px solid #bababa;
+    }
+    .col header.title{
+        font-size: 3vw;
     }
 }
 

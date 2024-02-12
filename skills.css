@@ -9,6 +9,17 @@
     position: relative;
 }
 
+@media only screen and (max-width: 1000px) {
+    .header{
+      font-size: 5vw;
+    }
+}
+@media only screen and (min-width: 1001px) {
+    .header{
+      font-size: 3vw;
+    }
+}
+
 .container{
     width: 100vw;
     display: flex;
