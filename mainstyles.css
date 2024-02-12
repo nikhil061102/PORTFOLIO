@@ -69,8 +69,8 @@ html {
 }
 
 .sections {
-  width: 90vw;
-  margin: 13vh auto 1%;
+  width: 95vw;
+  margin: 20vh auto;
   background-color: white;
   display: flex;
   flex-direction: column;

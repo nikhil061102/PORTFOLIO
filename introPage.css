@@ -37,14 +37,17 @@
   animation: spin_words 6s infinite;
 }
 
-#picNheading{
-  width: 90%;
+@media screen and (min-width: 690px) and (max-width: 1000px) {
+  #introPage .wrapper {
+    height: 14vh;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   #picNheading{
     display: flex;
     justify-content: space-between;
+    width: 90%;
   }
   #mainContainer #textInfo {
     display: flex;
