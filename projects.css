@@ -1,9 +1,23 @@
-body {
-  display: flex;
-  padding: 0 35px;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+@media only screen and (max-width: 1000px) {
+  #projects .title{
+      font-size: 5vw;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  #projects .title{
+      font-size: 3vw;
+  }
+}
+
+
+#contact .wrapper .title{
+  font-size: 5vw;
+}
+
+@media only screen and (min-width: 1001px) {
+#contact .wrapper .title{
+  font-size: 3vw;
+}
 }
 
 .wrapper {
@@ -68,38 +82,41 @@ body {
 }
 .carousel .card {
   scroll-snap-align: start;
-  border: 5px solid red;
-  height: 342px;
+  border: 2px solid black;
+  box-shadow: 10px 0px 10px rgb(127, 127, 127);
   list-style: none;
   background: #fff;
   cursor: pointer;
-  padding: 15px;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 .carousel .card .img {
   background: #8B53FF;
-  height: 148px;
-  width: 148px;
-  border-radius: 50%;
+  height: 200px;
+  width: 250px;
 }
 .card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 250px;
+  height: 200px;
   object-fit: cover;
   border: 4px solid #fff;
 }
 .carousel .card h2 {
-  font-weight: 500;
+  font-weight: 200;
   font-size: 1.56rem;
-  margin: 30px 0 5px;
+  margin: 10px 0 5px;
 }
 .carousel .card span {
   color: #6A6D78;
   font-size: 1.31rem;
 }
 
+.wrapper ul li a{
+  text-decoration: none;
+}
+.wrapper ul li:hover a{
+  font-weight: bold;
+}
 @media screen and (max-width: 900px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
