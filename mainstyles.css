@@ -16,14 +16,14 @@ body{
   background-color: var(--bg-color);
   color: var(--text-color);
 }
+
 html {
   scroll-behavior: smooth;
 }
 
-
 .StickyNavBar {
   background-color: var(--text-color);
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -81,7 +81,7 @@ html {
 
 .sections {
   width: 95vw;
-  margin: 20vh auto;
+  margin: 10vh auto;
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ html {
 }
 
 .dropdown {
-  margin-right: 3vw;
+  margin-right: 1vw;
   position: relative;
   display: inline-block;
 }
@@ -106,7 +106,6 @@ html {
 .dropdown-content {
   display: none;
   position: absolute;
-  border-radius: 5px;
   background-color: var(--text-color);
   top: 100%;
   left: 50%;
